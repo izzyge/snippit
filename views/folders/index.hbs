@@ -3,12 +3,16 @@
 
   <div class="row">
     {{#each folders as |folder|}}
-    <div class="col-sm-4">
+    <!-- <div class="col-sm-4"> -->
+    <a href="/folders/{{folder.id}}" class="folder">
       <div class="card text-center">
-          <img class="mx-auto" src="../img/foldericon.png" height=30px width=35px>
+        <div class="mx-auto"></div>
+          <img src="../img/foldericon.png" onmouseover="this.src='../img/folder-icon.png';" onmouseout="this.src='../img/foldericon.png';" height=30px width=35px>
+
           <a href="/folders/{{folder.id}}">{{folder.title}}</a>
       </div>
-    </div>
+    </a>
+    <!-- </div> -->
     {{/each}}
   </div>
 

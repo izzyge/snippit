@@ -91,9 +91,9 @@ h2 {
   display: flex;
   flex-direction: row;
   background-color: #fff;
-  height: 45px;
+  height: 50px;
   align-items: center;
-  padding: 10px 10px 5px 10px;
+  padding: 2.5px 10px 2.5px 10px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -112,6 +112,7 @@ h2 {
   min-height: 400px;
   padding: 20em;
   width: 100%;
+  margin-top: -10px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,7 +145,6 @@ h2 {
 .card {
   border: 1px solid #191919;
   background-color: white;
-  border-radius: 0!important;
   border-color: #191919;
   padding: 1em;
 }
@@ -167,3 +167,5 @@ h2 {
 .new-post textarea {
   width: 50em;
 }
+
+/* Folder Index */
