@@ -4,14 +4,16 @@ body {
   flex-direction: column;
   flex: 1 0 auto;
   margin: 0;
+  color: #434343;
 }
 
 button {
-  border: 1px solid #191919;
+  border: 2px solid #434343;
   font: 14px "HelveticaNeue", serif;
+  font-weight: bold;
   margin: .5em .5em;
   outline: none;
-  color: #191919;
+  color: #434343;
   background-color: transparent;
   padding: 5px 20px;
   text-align: center;
@@ -21,7 +23,7 @@ button {
 }
 
 button:hover {
-  background-color: #191919;
+  background-color: #434343;
   color: white;
 }
 
@@ -36,14 +38,14 @@ a {
 }
 
 a:hover {
-  color: #555;
+  color: #434343;
 }
 
 input, textarea {
-  color: #191919;
+  color: #434343;
   font: 14px "HelveticaNeue", serif;
   margin: .5em 0;
-  border: 1px solid #191919;
+  border: 2px solid #434343;
   outline: none!important;
   padding: 5px 10px;
 }
@@ -68,7 +70,7 @@ h2 {
 .form {
   background-color:transparent;
   border: 0px solid;
-  border-bottom: 1px solid #191919;
+  border-bottom: 1px solid #434343;
 }
 
 .create-account, .login {
@@ -106,6 +108,10 @@ h2 {
   font-weight: bold;
 }
 
+.logo {
+  margin-right: .1em;
+}
+
 /* Landing Page */
 .parallax {
   background-image: linear-gradient(#3cba33ff, #fff);
@@ -141,13 +147,15 @@ h2 {
   font-style: italic;
 }
 
-
 .card {
-  border: 1px solid #191919;
+  border: 2px solid #434343;
   background-color: white;
-  border-color: #191919;
   padding: 1em;
   margin: 1em;
+}
+
+.card:hover {
+  border-color: #3cba33ff;
 }
 
 /* New Post */
@@ -170,3 +178,6 @@ h2 {
 }
 
 /* Folder Index */
+.folder-icon {
+  margin-bottom: .5em;
+}
