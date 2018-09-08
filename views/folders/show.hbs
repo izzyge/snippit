@@ -4,24 +4,27 @@
     <a href="/folders/{{folder.id}}/edit">Edit Title</a>
   </div>
 
-  <div class = "row justify-content-center">
-
-      {{#each files as |file|}}
-      <h6>{{folder.users}}</h6>
-        <div on click = "">
-          <div class="card" style="margin-top: .5em;">
-            <h1 style="text-align: center; padding-top: .5em;">{{file.title}}</h1>
+  <div class = "row">
+    {{#each files as |file|}}
+      <!-- <div class="col-sm-4"> -->
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title">{{file.title}}</h1>
             <p class="card-text" style="white-space: pre">{{file.body}}</p>
-        </div>
-      {{/each}}
 
-      <div style="width: 18rem;">
-        <div class = "row justify-content-center">
-            <a href="/folders/{{folder._id}}/files/new"><button>New Code Snippit</button></a>
+            <button>Copy</button>
+          </div>
         </div>
-      </div>
-
+      <!-- </div> -->
+    {{/each}}
   </div>
-</div>
+
+  <div class="row">
+    <!-- <div class="col-sm-4"> -->
+      <a href="/folders/{{folder._id}}/files/new">
+        <button>New Code Snippit</button>
+      </a>
+    <!-- </div> -->
+  </div>
 
 <a href="/folders" class="back-btn"><button>< Back</button></a>

@@ -1,0 +1,18 @@
+<div class="card-body">
+  <h1 class="card-title">{{file.title}}</h1>
+  <p class="card-body">
+    <textarea style="white-space: pre" value="{{file.body}}">
+  </p>
+
+  <button onclick="myFunction();">Copy</button>
+</div>
+
+<script>
+  function myFunction() {
+    var copyText = document.getElementById("textarea");
+    copyText.select();
+    document.execCommand("copy");
+    //  var tooltip = document.getElementById("myTooltip");
+    // tooltip.innerHTML = "Link copied!";
+  }
+</script>
