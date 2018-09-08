@@ -98,3 +98,15 @@ h2 {
   text-decoration: none;
   font-weight: bold;
 }
+
+/* Landing Page */
+.parallax {
+  background-image: linear-gradient(#3cba33ff, #fff);
+  min-height: 400px;
+  padding: 12em 0 10em 0;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
