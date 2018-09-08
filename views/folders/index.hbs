@@ -4,11 +4,10 @@
   <div class="row">
     {{#each folders as |folder|}}
     <!-- <div class="col-sm-4"> -->
-    <a href="/folders/{{folder.id}}" class="folder">
+    <a href="/folders/{{folder.id}}">
       <div class="card text-center">
         <div class="mx-auto"></div>
-          <img src="../img/foldericon.png" onmouseover="this.src='../img/folder-icon.png';" onmouseout="this.src='../img/foldericon.png';" height=30px width=35px>
-
+          <img class="folder-icon" src="../img/foldericon.png" onmouseover="this.src='../img/folder-icon.png';" onmouseout="this.src='../img/foldericon.png';" height=30px width=35px>
           <a href="/folders/{{folder.id}}">{{folder.title}}</a>
       </div>
     </a>

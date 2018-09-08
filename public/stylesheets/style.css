@@ -7,8 +7,9 @@ body {
 }
 
 button {
-  border: 1px solid #191919;
+  border: 2px solid #191919;
   font: 14px "HelveticaNeue", serif;
+  font-weight: bold;
   margin: .5em .5em;
   outline: none;
   color: #191919;
@@ -43,7 +44,7 @@ input, textarea {
   color: #191919;
   font: 14px "HelveticaNeue", serif;
   margin: .5em 0;
-  border: 1px solid #191919;
+  border: 2px solid #191919;
   outline: none!important;
   padding: 5px 10px;
 }
@@ -106,6 +107,10 @@ h2 {
   font-weight: bold;
 }
 
+.logo {
+  margin-right: .1em;
+}
+
 /* Landing Page */
 .parallax {
   background-image: linear-gradient(#3cba33ff, #fff);
@@ -141,13 +146,15 @@ h2 {
   font-style: italic;
 }
 
-
 .card {
-  border: 1px solid #191919;
+  border: 2px solid #191919;
   background-color: white;
-  border-color: #191919;
   padding: 1em;
   margin: 1em;
+}
+
+.card:hover {
+  border-color: #3cba33ff;
 }
 
 /* New Post */
@@ -170,3 +177,6 @@ h2 {
 }
 
 /* Folder Index */
+.folder-icon {
+  margin-bottom: .5em;
+}
