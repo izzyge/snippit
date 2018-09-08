@@ -1,0 +1,30 @@
+<div class = "folder-topic text-center">
+  <h1>{{folder.topic}}</h1>
+</div>
+
+<div class = "row justify-content-center">
+
+    {{#each files as |file|}}
+    <h6>{{folder.users}}</h6>
+      <div class="card border-info fileitem"  on click = "">
+        <div class="card-body">
+          <div class="file-div">
+            <h3 class = "card-title">{{file.title}}</h3>
+            <p class = "card-text">{{file.body}}</p>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+
+
+
+
+    <div class = "card plus-card border-info" style="width: 18rem;">
+      <div class = "row justify-content-center">
+
+          <a href="/folders/{{folder._id}}/files/new">new</a>
+
+      </div>
+    </div>
+
+</div>
