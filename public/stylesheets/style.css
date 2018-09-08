@@ -1,5 +1,5 @@
 body {
-  font: 14px "HelveticaNeue-Light";
+  font: 14px "HelveticaNeue";
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
@@ -8,7 +8,7 @@ body {
 
 button {
   border: 1px solid #191919;
-  font: 14px "HelveticaNeue-Light", serif;
+  font: 14px "HelveticaNeue", serif;
   margin: .5em .5em;
   outline: none;
   color: #191919;
@@ -17,6 +17,7 @@ button {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 button:hover {
@@ -40,7 +41,7 @@ a:hover {
 
 input, textarea {
   color: #191919;
-  font: 14px "HelveticaNeue-Light", serif;
+  font: 14px "HelveticaNeue", serif;
   margin: .5em 0;
   border: 1px solid #191919;
   outline: none!important;
@@ -92,7 +93,7 @@ h2 {
   background-color: #fff;
   height: 45px;
   align-items: center;
-  padding: 0 10px;
+  padding: 10px 10px 5px 10px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -109,13 +110,36 @@ h2 {
 .parallax {
   background-image: linear-gradient(#3cba33ff, #fff);
   min-height: 400px;
-  padding: 12em 0 10em 0;
+  padding: 20em;
   width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.welcome-title{
+  padding-bottom: 2em!important;
+}
+
+.second-section {
+  padding: 6em 0;
+  color: #3B6030;
+}
+
+.second-section h3 {
+  padding-bottom: 3em;
+  font-style: italic;
+}
+
+.second-section h4 {
+  padding-top: 2em;
+}
+
+.second-section h5 {
+  font-style: italic;
+}
+
 
 .card {
   border: 1px solid #191919;
