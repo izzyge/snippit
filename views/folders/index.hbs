@@ -1,12 +1,17 @@
 <div class="page">
   <h1>My Folders</h1>
-  <ul>
+
     {{#each folders as |folder|}}
-      <li>
-        <a href="/folders/{{folder.id}}">{{folder.title}}</a> | <a href="/folders/{{folder.id}}/edit">edit</a>
-      </li>
+
+    <div class = "card border-white">
+
+        <img src = "../img/foldericon.png" height=30px width=35px>
+
+        <a href="/folders/{{folder.id}}">{{folder.title}}</a>
+
+    </div>
+
     {{/each}}
-  </ul>
+
   <a href = "/folders/new"><button>+</button></a>
-<div>
-  
+</div>
