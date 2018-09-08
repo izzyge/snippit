@@ -1,12 +1,11 @@
 <div class="page new-post text-center">
   <form action="/folders/{{folder.id}}/files" method="post">
     <legend>New File</legend>
-
     <div>
-      <input class="form" type="text" required name="body" id="file-title" placeholder="Title" autocomplete="off">
+      <input class="form" type="text" required name="title" id="file-title" placeholder="Title" autocomplete="off">
     </div>
-    <div id="file-body">
-      <textarea id='file-body' required name="body" rows='20' placeholder="Write or paste in some code..."></textarea>
+    <div>
+      <textarea id="file-body" required name="body" rows='20' placeholder="Write or paste in some code..."></textarea>
     </div>
       <button type="submit">Finish</button>
     </div>
