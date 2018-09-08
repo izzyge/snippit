@@ -40,4 +40,16 @@ router.post('/:id', auth.requireLogin, (req, res, next) => {
   });
 });
 
+router.get('/:id', auth.requireLogin, (req, res, next) => {
+  Folder.findById(req.params.id, function(err, folder) {
+    if(err) { console.error(err) };
+
+    File.find({ folder: folder }, function(err, posts) {
+      if(err) { console.error(err) };
+
+      res.render('folders/show', { folder: folder, files: files });
+    });
+  });
+});
+
 module.exports = router;
