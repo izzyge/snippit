@@ -1,30 +1,25 @@
-<div class = "folder-title text-center page">
-  <h1>{{folder.title}}</h1>
-</div>
+<div class="page">
+  <div class = "folder-title text-center">
+    <h1>{{folder.title}}</h1>
+  </div>
 
-<div class = "row justify-content-center">
+  <div class = "row justify-content-center">
 
-    {{#each files as |file|}}
-    <h6>{{folder.users}}</h6>
-      <div class="card border-info fileitem"  on click = "">
-        <div class="card-body">
-          <div class="file-div">
-            <h3 class = "card-title">{{file.title}}</h3>
-            <p class = "card-text">{{file.body}}</p>
+      {{#each files as |file|}}
+      <h6>{{folder.users}}</h6>
+        <div on click = "">
+          <div class="card">
+              <h3 class = "card-title">{{file.title}}</h3>
+              <p class = "card-text">{{file.body}}</p>
           </div>
         </div>
+      {{/each}}
+
+      <div style="width: 18rem;">
+        <div class = "row justify-content-center">
+            <a href="/folders/{{folder._id}}/files/new"><button>New Code Snippit</button></a>
+        </div>
       </div>
-    {{/each}}
 
-
-
-
-    <div class = "card plus-card border-info" style="width: 18rem;">
-      <div class = "row justify-content-center">
-
-          <a href="/folders/{{folder._id}}/files/new">new</a>
-
-      </div>
-    </div>
-
+  </div>
 </div>
