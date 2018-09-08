@@ -29,12 +29,16 @@ A user opens the web app and a dashboard of all their code is shown.
 Home
 - GET `/`
 
-All Posts
-- GET `/users/:user-id`
+All Folders
+- GET `/folders`
+
+New Folder
+- GET `/folders/:folder-id/files/new`
+- POST `/folders/:folder-id/files/`
 
 New Post
-- GET `/users/:user-id/new`
-- POST `/users/:user-id/:post-id`
+- GET `/folders/new`
+- POST `/folders`
 
 Users
 - GET `/login`
