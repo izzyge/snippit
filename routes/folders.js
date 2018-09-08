@@ -26,11 +26,11 @@ router.get('/:id', auth.requireLogin, (req, res, next) => {
   Folder.findById(req.params.id, function(err, folder) {
     if(err) { console.error(err) };
 
-    // File.find({ folder: folder }).sort({ points: -1 }).populate('comments').exec(function (err, file) {
-    //   if (err) { console.error(err) };
-    //
-    //   res.render('folders/show', { folder: folder, files: files, folderId: req.params.id });
-    // });
+    File.find({ folder: folder }, function(err, files) {
+     if(err) { console.error(err) };
+
+    res.render('folders/show', { folder, files });
+     });
   });
 });
 
