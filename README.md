@@ -1,8 +1,5 @@
 # snippit
 ADAHacks Project 2018
-
-# Snipp-It
-ADAHacks Project 2018
 Snipp-It is a website which allows users to save working code snippets onto a personal account.
 
 ## Audience
