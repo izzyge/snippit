@@ -23,7 +23,7 @@ router.post('/', auth.requireLogin, (req, res, next) => {
 
     file.save(function(err, file) {
       if(err) { console.error(err) };
-      return res.redirect(`/folders/${folders._id}`);
+      return res.redirect(`/folder/${folders._id}`);
     });
   });
 });
