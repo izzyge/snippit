@@ -47,12 +47,36 @@ input, textarea {
   padding: 5px 10px;
 }
 
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 18px;
+}
+
 .page {
   margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.form {
+  background-color:transparent;
+  border: 0px solid;
+  border-bottom: 1px solid #191919;
+}
+
+.create-account, .login {
+  margin-top: 0!important;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* Nav Bar */
