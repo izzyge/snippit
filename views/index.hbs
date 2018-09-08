@@ -3,4 +3,10 @@
   <h1>{{title}}</h1>
   <p>Welcome to {{title}}</p>
 
+  {{# if currentUserId}}
+      <a href="/folders"><button>Go To Profile</button></a>
+    {{else}}
+      <a href="/users/new"><button>Get Started</button></a>
+  {{/if}}
+  
 </div>
