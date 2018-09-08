@@ -1,6 +1,6 @@
-# snippit
+# Snippit
 ADAHacks Project 2018
-Snipp-It is a website which allows users to save working code snippets onto a personal account.
+Snippit is a website which allows users to save working code snippets onto a personal account.
 
 ## Audience
 Anyone coders who want to easily accesss working code.
