@@ -9,10 +9,9 @@
       {{#each files as |file|}}
       <h6>{{folder.users}}</h6>
         <div on click = "">
-          <div class="card">
-              <h3 class = "card-title">{{file.title}}</h3>
-              <p class = "card-text">{{file.body}}</p>
-          </div>
+          <div class="card" style="margin-top: .5em;">
+            <h1 style="text-align: center; padding-top: .5em;">{{file.title}}</h1>
+            <p class="card-text" style="white-space: pre">{{file.body}}</p>
         </div>
       {{/each}}
 
