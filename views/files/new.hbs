@@ -1,0 +1,19 @@
+<div>
+  <form action="/folders/{{folder.id}}/files" method="post">
+    <legend>New File</legend>
+
+    <div class="form-group">
+      <label for="file-title">Title</label>
+      <input type="text" name="title" class="form-control" id="file-title">
+    </div>
+
+    <div class="form-group">
+      <label for="file-body">Body</label>
+      <input type="text" name="body" class="form-control" id="file-body">
+    </div>
+
+    <div>
+      <button type="submit" class="btn btn-primary">Finish</button>
+    </div>
+  </form>
+</div>
