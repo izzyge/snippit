@@ -79,6 +79,12 @@ h2 {
   transform: translate(-50%, -50%);
 }
 
+.back-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+}
+
 /* Nav Bar */
 .navbar {
   display: flex;
