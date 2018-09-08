@@ -6,7 +6,6 @@ const User = require('../models/user');
 // SET layout variables
 router.use( function(req, res, next) {
   res.locals.title = "Snippit";
-
   res.locals.currentUserId = req.session.userId;
   res.locals.username = req.session.username;
   next();
@@ -31,6 +30,7 @@ router.post('/login', (req, res, next) => {
       return next(next_error);
     } else {
       req.session.userId = user._id;
+      req.session.username = user.username;
 
       return res.redirect('/') ;
     }
