@@ -25,7 +25,7 @@ router.post('/', (req, res, next) => {
 
   user.save(function(err, user) {
     if(err) console.log(err);
-    return res.redirect('/users');
+    return res.redirect('/login');
   });
 })
 
