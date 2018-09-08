@@ -1,0 +1,13 @@
+<div>
+  Folders Index
+</div>
+
+<div>
+  <ul>
+    {{#each folders as |folder|}}
+      <li>
+        <a href="/rooms/{{folder.id}}">{{folder.topic}}</a> | <a href="/folders/{{folder.id}}/edit">edit</a>
+      </li>
+    {{/each}}
+  </ul>
+<div>
