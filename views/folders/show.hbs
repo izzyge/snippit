@@ -6,16 +6,19 @@
 
   <div class = "row">
     {{#each files as |file|}}
-      <!-- <div class="col-sm-4"> -->
         <div class="card">
           <div class="card-body">
             <h1 class="card-title">{{file.title}}</h1>
-            <p class="card-text" style="white-space: pre">{{file.body}}</p>
+            <div id="copy">
+              <p class="card-text" style="white-space: pre">{{file.body}}</p>
+            </div>
+            <!-- <button class="btn" data-clipboard-text="{{file.body}}">
+                Copy to clipboard
+            </button> -->
+            <button class="copyButton" id="copyButtonId" data-clipboard-action="copy" data-clipboard-target="#copy">Copy!</button>
 
-            <button>Copy</button>
           </div>
         </div>
-      <!-- </div> -->
     {{/each}}
   </div>
 
@@ -28,3 +31,13 @@
   </div>
 
 <a href="/folders" class="back-btn"><button>< Back</button></a>
+
+<script>
+  var clipboard = new Clipboard('.copyButton');
+  // clipboard.on('success', function(e) {
+  //     console.log(e);
+  // });
+  // clipboard.on('error', function(e) {
+  //     console.log(e);
+  // });
+</script>
