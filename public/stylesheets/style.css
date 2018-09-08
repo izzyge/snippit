@@ -1,8 +1,76 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "HelveticaNeue-Light";
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  margin: 0;
+}
+
+button {
+  border: 1px solid #191919;
+  font: 14px "HelveticaNeue-Light", serif;
+  margin: .5em .5em;
+  outline: none;
+  color: #191919;
+  background-color: transparent;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #191919;
+  color: white;
+}
+
+button:focus {
+  outline: none;
 }
 
 a {
-  color: #00B7FF;
+  color: #191919;
+  cursor: pointer;
+  text-decoration: none!important;
+}
+
+a:hover {
+  color: #555;
+}
+
+input, textarea {
+  color: #191919;
+  font: 14px "HelveticaNeue-Light", serif;
+  margin: .5em 0;
+  border: 1px solid #191919;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.page {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Nav Bar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  height: 45px;
+  align-items: center;
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.title {
+  margin-right: auto;
+  text-decoration: none;
+  font-weight: bold;
 }
