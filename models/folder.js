@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const FolderSchema = new Schema({
-  topic: { type: String, required: true },
+  title: { type: String, required: true },
   users: [{ type: Schema.Types.ObjectId, ref: 'User'}],
   // files: [{type: String, required: true}]
 

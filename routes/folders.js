@@ -8,7 +8,7 @@ const router = express.Router();
 
 // Folders index
 router.get('/', (req, res) => {
-  Folder.find({}, 'topic', (err, folders) => {
+  Folder.find({}, 'title', (err, folders) => {
     if (err) {
       console.error(err);
     } else {
