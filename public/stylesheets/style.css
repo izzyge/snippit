@@ -8,23 +8,23 @@ body {
 }
 
 button {
-  border: 2px solid #434343;
+  border: 1.5px solid #434343;
   font: 14px "HelveticaNeue", serif;
   font-weight: bold;
   margin: .5em .5em;
   outline: none;
   color: #434343;
   background-color: transparent;
-  padding: 5px 20px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 button:hover {
-  background-color: #434343;
-  color: white;
+  border-color: #3cba33ff;
+  color: #3cba33ff;
 }
 
 button:focus {
@@ -45,7 +45,7 @@ input, textarea {
   color: #434343;
   font: 14px "HelveticaNeue", serif;
   margin: .5em 0;
-  border: 2px solid #434343;
+  border: 1.5px solid #434343;
   outline: none!important;
   padding: 5px 10px;
 }
@@ -60,7 +60,7 @@ h2 {
 }
 
 .page {
-  margin-top: 60px;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@ h2 {
 .form {
   background-color:transparent;
   border: 0px solid;
-  border-bottom: 1px solid #434343;
+  border-bottom: 1.5px solid #434343;
 }
 
 .create-account, .login {
@@ -83,8 +83,9 @@ h2 {
 }
 
 .back-btn {
+  background-color: #fff;
   position: fixed;
-  bottom: 30px;
+  top: 80px;
   left: 30px;
 }
 
@@ -100,6 +101,7 @@ h2 {
   top: 0;
   width: 100%;
   z-index: 1;
+  border-bottom: solid #efefef 1.5px;
 }
 
 .title {
@@ -125,13 +127,24 @@ h2 {
   background-size: cover;
 }
 
+.typer {
+  font-size: 30px;
+}
+
+.tagline {
+  margin-top: -20px;
+  margin-bottom: 20px;
+
+  font-size: 20px;
+}
+
 .welcome-title{
   padding-bottom: 2em!important;
 }
 
 .second-section {
   padding: 6em 0;
-  color: #3B6030;
+  color: #434343;
 }
 
 .second-section h3 {
@@ -148,7 +161,7 @@ h2 {
 }
 
 .card {
-  border: 2px solid #434343;
+  border: 1.5px solid #434343;
   background-color: white;
   padding: 1em;
   margin: 1em;
