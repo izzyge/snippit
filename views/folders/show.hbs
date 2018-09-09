@@ -1,12 +1,12 @@
 <div class="page">
   <div class = "folder-title text-center">
     <h1>{{folder.title}}</h1>
-    <a href="/folders/{{folder.id}}/edit">Edit Title</a>
+    <!-- <a href="/folders/{{folder.id}}/edit">Edit Title</a> -->
   </div>
 
   <div class = "row">
     {{#each files as |file|}}
-      <!-- <div class="col-sm-4"> -->
+      <div class="col-sm-6">
         <div class="card">
           <div class="card-body">
             <h1 class="card-title">{{file.title}}</h1>
@@ -15,7 +15,7 @@
             <button>Copy</button>
           </div>
         </div>
-      <!-- </div> -->
+      </div>
     {{/each}}
   </div>
   <div class="row">

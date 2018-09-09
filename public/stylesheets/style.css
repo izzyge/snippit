@@ -8,7 +8,7 @@ body {
 }
 
 button {
-  border: 2px solid #434343;
+  border: 1.5px solid #434343;
   font: 14px "HelveticaNeue", serif;
   font-weight: bold;
   margin: .5em .5em;
@@ -45,7 +45,7 @@ input, textarea {
   color: #434343;
   font: 14px "HelveticaNeue", serif;
   margin: .5em 0;
-  border: 2px solid #434343;
+  border: 1.5px solid #434343;
   outline: none!important;
   padding: 5px 10px;
 }
@@ -83,8 +83,9 @@ h2 {
 }
 
 .back-btn {
+  background-color: #fff;
   position: fixed;
-  bottom: 30px;
+  top: 80px;
   left: 30px;
 }
 
@@ -143,7 +144,7 @@ h2 {
 
 .second-section {
   padding: 6em 0;
-  color: #3B6030;
+  color: #434343;
 }
 
 .second-section h3 {
@@ -160,7 +161,7 @@ h2 {
 }
 
 .card {
-  border: 2px solid #434343;
+  border: 1.5px solid #434343;
   background-color: white;
   padding: 1em;
   margin: 1em;
