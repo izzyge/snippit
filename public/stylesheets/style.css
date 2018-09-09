@@ -15,16 +15,16 @@ button {
   outline: none;
   color: #434343;
   background-color: transparent;
-  padding: 5px 20px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 button:hover {
-  background-color: #434343;
-  color: white;
+  border-color: #3cba33ff;
+  color: #3cba33ff;
 }
 
 button:focus {
@@ -70,7 +70,7 @@ h2 {
 .form {
   background-color:transparent;
   border: 0px solid;
-  border-bottom: 1px solid #434343;
+  border-bottom: 1.5px solid #434343;
 }
 
 .create-account, .login {
@@ -101,7 +101,7 @@ h2 {
   top: 0;
   width: 100%;
   z-index: 1;
-  border-bottom: solid #efefef .1em;
+  border-bottom: solid #efefef 1.5px;
 }
 
 .title {
